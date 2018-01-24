@@ -1,8 +1,6 @@
 clc, clear all, close all
 
-%definisi jumlah node
-jumlahNode = 100;
-
+%arsitektur jaringan
 %definisi luas area
 area.x=100;
 area.y=100;
@@ -25,6 +23,10 @@ wsn.energi.freespace=10*0.000000000001;
 %energi multipath
 wsn.energi.multipath=0.0013*0.000000000001;
 
+%inisialisasi node
+%definisi jumlah node
+jumlahNode = 100;
+
 %inisialisasi koordinat node
 for i=1:jumlahNode
     %membuat koordinat x dari node
@@ -46,8 +48,15 @@ plot(bs.x,bs.y,'o','MarkerFaceColor', 'r');
 xlabel('meter');
 ylabel('meter');
 
+%inisialisasi round
 %inisialisasi jumlah round
 jumlahRound=100;
+
+%panjang paket CH -> BS
+%panjang paket non CH -> CH
+
+%clustering
 for j=1:jumlahRound
+    j
     
 end
