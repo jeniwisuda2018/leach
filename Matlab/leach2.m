@@ -29,7 +29,6 @@ plot(bs.x,bs.y,'o','MarkerFaceColor', 'r');
 for i=1:round.jumlahRound
     hasilCluster = cluster(arsitekturJaringan, arsitekturNode, i, 4);
     hasilCluster = energiCH(hasilCluster, round);
-    hasilCluster = energiNonCH(hasilCluster, round);
-    
+    hasilCluster = energiNonCH(hasilCluster, round);   
     
 end
